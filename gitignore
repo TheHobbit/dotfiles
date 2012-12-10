@@ -1,0 +1,31 @@
+# Ignore file for all git repository
+# Named without dot to allow including it in dotfiles repository
+# (need to set core.excludesfile to ~/.gitignore using git config --global core.excludesfile ~/.gitignore)
+
+# ignore the per directory ignore file
+.gitignore
+
+# ignore emacs-related files
+*~
+.emacs.desktop*
+semantic.cache
+
+# never put binary files in the repository
+*.o
+*.a
+*.so
+*.lo
+*.la
+*.exe
+
+# absolutely no core files in the repository!
+core
+
+# ignore TeX processing files
+*.log
+*.aux
+*.dvi
+*.toc
+
+# ignore TAGS files
+TAGS
